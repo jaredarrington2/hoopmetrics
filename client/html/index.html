@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hoopmetrics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/hoopmetrics.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hoopmetrics</h1>
+      </div>
+    </div>
+    <div>
+      <img src="./img/math-post.jpg" />
+    </div>
+    <!--Alert  -->
+    <div class="alert alert-warning alert-dismissible fade in" id="alert" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>Violation!</strong>It looks like you've missed a few fields. Shoot again!
+    </div>
+    <!-- Input team information -->
+    <div class="row" id="teaminput">\
+      <div class="container" id="partone">
+        <form action='/' method="POST" id="teams">
+          <div class="form-group">
+            <label for="city">School</label>
+            <input type="text" class="form-control" id="school" name="school" aria-describedby="schoolHelp" placeholder="Enter school name">
+            <label for="team">Team Name</label>
+            <input type="text" class="form-control" id="teamname" name="teamname" aria-describedby="teamHelp" placeholder="Enter team name">
+            <form class="form-inline row">
+              <div class="form-inline form-group">
+                <label for="color" >Color One</label>
+                <input type="color" class="form-control" placeholder=".col-sm-6" id="colorone" name="colorone" aria-describedby="teamHelp">
+                <label for="color">Color Two</label>
+                <input type="color" class="form-control" id="colortwo" name="colortwo" aria-describedby="teamHelp" placeholder=".col-sm-6">
+              </div>
+            </form>
+            <label for"conference">Conference</label>
+            <select class="form-control" id="conference" name="conference">
+              <option selected disabled>Select a conference</option>
+              <option>ACC</option>
+              <option>B1G</option>
+              <option>Big East</option>
+              <option>Big 12</option>
+              <option>SEC</option>
+              <option>PAC 12</option>
+              <option>A 10</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Input roster -->
+    <div class="row">
+      <div class="container" id="parttwo">
+        <form id="roster"accept-charset=""action='/' method="POST">
+          <div class="form-group">
+            <label for="player">Player</label>
+            <input type="text" class="form-control" id="school" name="player" aria-describedby="playerHelp" placeholder="Enter player name">
+          </div>
+          <select class="form-control" id="position" name="position">
+            <option selected disabled>Choose a position</option>
+            <option>G</option>
+            <option>F</option>
+            <option>C</option>
+            <option>Coach</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <!-- Roster Table -->
+    <div class="row">
+      <div class="container" id="rostertable">
+        <table class="table">
+          <thead class="thead-inverse">
+            <th>Player Name</th>
+            <th>Position</th>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

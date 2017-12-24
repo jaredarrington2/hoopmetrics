@@ -1,0 +1,62 @@
+* {
+  margin: 10px;
+}
+body {
+  position: relative;
+}
+
+body img{
+  width: 100%;
+  height: auto;
+  margin: 0px !important;
+}
+
+.jumbotron{
+    background-color: transparent;
+}
+
+.jumbotron a{
+  text-decoration: none;
+}
+
+.btn-primary{
+  background-color: #FE5F00;
+  font-family: 'Gentium Book Basic', serif;
+}
+.btn-primary:hover{
+  background-color: #00171F;
+}
+
+.btn-secondary{
+  outline-color: black;
+  font-family: 'Gentium Book Basic', serif;
+}
+
+.btn-secondary:hover{
+  background-color: grey;
+}
+
+.form-group{
+  font-family: 'Gentium Book Basic', serif;
+}
+
+#alert{
+    font-family: 'Gentium Book Basic', serif;
+    background-color: #D00000;
+    color: #FFF;
+}
+
+h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: bold;
+}
+
+label{
+  font-family: 'Gentium Book Basic', serif;
+}
