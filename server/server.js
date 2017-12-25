@@ -8,7 +8,7 @@ var bodyParser= require('body-parser');
 var path = require('path');
 var routes = require('./controllers/routes.js');
 
-var models = require('./models/index.js');
+var models = require('./models');
 models.sequelize.sync();
 
 var html_creator = require('./helpers/html_creator.js')
@@ -24,6 +24,9 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../client/html/index.html'));
 });
 
+// app.post('/create-team', function(req,res){
+//
+// })
 
 http.listen(3000, function(){
   console.log('listening on Port 3000');
