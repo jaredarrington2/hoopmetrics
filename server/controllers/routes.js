@@ -34,4 +34,9 @@ router.post('/create-team', (req,res) => {
 	});
 });
 
+router.get('/teams', function(req, res){
+	res.sendFile(path.join(__dirname, '../../client/html/teams.html'));
+});
+
+
 module.exports = router;
